@@ -1,0 +1,66 @@
+<div class="edit-contact-page container">
+
+    <div class="row">
+
+        <div class="col-sm-11">
+            <div class="heading">
+                <h3>Edit Emergency Contact</h3>
+                <span class="glyphicon glyphicon-arrow-left back-arrow" ui-sref="emergencycontacts" aria-hidden="true"></span>
+            </div>
+
+            <div class="contact-container">
+                <form name="editContactForm">
+                    <!-- Emplyee Name -->
+                    <div class="form-group row">
+                        <label for="contact-name" class="col-xs-3 col-form-label">Emplyee Name</label>
+                        <div class="col-xs-9">
+                            <input class="form-control" type="text" ng-model="contact.Employee_Name" id="contact-name" required>
+                        </div>
+                    </div>
+
+                    <!-- Employee Phone -->
+                    <div class="form-group row">
+                        <label for="employee-phone" class="col-xs-3 col-form-label">Employee Phone</label>
+                        <div class="col-xs-9">
+                            <input class="form-control" type="text" ng-model="contact.Employee_Phone" ng-pattern="phonePattern" name="employee-phone" required>
+                        </div>
+                    </div>
+
+                    <!-- Emergency Contact Name -->
+                    <div class="form-group row">
+                        <label for="emergency-contact-name" class="col-xs-3 col-form-label">Emergency Contact Name</label>
+                        <div class="col-xs-9">
+                            <input class="form-control" type="text" ng-model="contact.Emergency_Contact_Name" id="emergency-contact-name" required>
+                        </div>
+                    </div>
+
+                    <!-- Emergency Contact Phone -->
+                    <div class="form-group row">
+                        <label for="emergency-contact-phone" class="col-xs-3 col-form-label">Emergency Contact Phone</label>
+                        <div class="col-xs-9">
+                            <input class="form-control" type="text" ng-model="contact.Emergency_Contact_Phone" ng-pattern="phonePattern" id="emergency-contact-phone" required>
+                        </div>
+                    </div>
+
+                    <div class="help">
+                        <span>*All fields required</span>
+                        <br>
+                        <span>*Phone numbers should be in format: xxx-xxx-xxxx</span>
+                    </div>
+
+                    <div class="text-center">
+                        <button class="btn btn-primary" ng-disabled="!editContactForm.$valid" ng-click="saveContact()">Save</button>
+                        <span ng-if="saved" class="green">&nbsp;Saved!</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="col-sm-1">
+            <div class="delete-button">
+                <button type="button" class="btn btn-danger" ng-click="deleteContact()">Delete Contact</button>
+            </div>
+        </div>
+
+    </div>
+</div>

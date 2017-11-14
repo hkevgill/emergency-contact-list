@@ -1,0 +1,7 @@
+.emergency-contacts-page td {
+    height: 50px;
+}
+
+.emergency-contacts-page th {
+    cursor: pointer;
+}
