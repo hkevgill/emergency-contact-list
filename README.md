@@ -18,14 +18,17 @@ You must have the following installed:
 
 To run locally:
  - Download the code or clone the repository
- - Navigate to the app directory
+ - Navigate into the app directory
  - Run 'sudo npm install' to install all of the dependencies
  - Run 'node server.js' to start the server
  - Open a web browser and navigate to http://localhost:3000
 
 ### Screenshots
-Course registration screen:
-![cr](images/cr.png)
+Emergency contact list (home) screen:
+![ecl](images/ecl.png)
 
-Edit course screen:
-![edit](images/edit.png)
+Edit emergency contact screen:
+![eec](images/eec.png)
+
+Add contact screen:
+![ac](images/ac.png)
