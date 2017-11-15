@@ -7,7 +7,7 @@ angular.module('uvicApp').controller('emergency-contacts-controller', function (
     $scope.propertyName = 'Employee_Name';
     $scope.reverse = true;
 
-    // get all courses on page load
+    // get all contacts on page load
     emergencyContactsFactory.getEmergencyContacts().then(function(data) {
         $scope.emergencyContacts = data.rows;
     }, function() {

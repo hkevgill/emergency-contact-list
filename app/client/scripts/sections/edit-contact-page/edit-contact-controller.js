@@ -25,12 +25,12 @@ angular.module('uvicApp').controller('edit-contact-controller', function ($scope
         console.log('error loading contact');
     });
 
-    // save course info
+    // save contact info
     $scope.saveContact = function() {
 
         emergencyContactsFactory.updateContactInfo($scope.contact).then(function(data) {
 
-            $scope.course = data.rows[0];
+            $scope.contact = data.rows[0];
 
             $scope.saved = true;
 

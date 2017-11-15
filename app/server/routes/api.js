@@ -24,7 +24,7 @@ module.exports = function(app, express) {
         databaseService.deleteContact(req, res);
     });
 
-    // add student to course
+    // add new contact
     apiRouter.post('/emergencycontacts', function(req, res) {
         databaseService.addContact(req, res)
     });

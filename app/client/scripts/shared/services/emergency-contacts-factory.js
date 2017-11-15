@@ -3,7 +3,7 @@
 angular.module('uvicApp').factory('emergencyContactsFactory', function(utilsFactory) {
     var factory = {};
 
-    // get request for all courses
+    // get request for all contacts
     factory.getEmergencyContacts = function(){
         var url = 'api/emergencycontacts';
 
@@ -17,7 +17,7 @@ angular.module('uvicApp').factory('emergencyContactsFactory', function(utilsFact
         return utilsFactory.getRequest(url);
     };
 
-    // save new course info
+    // save new contact info
     factory.updateContactInfo = function(body) {
         var url = 'api//emergencycontacts';
 
