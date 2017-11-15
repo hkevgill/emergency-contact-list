@@ -1,15 +1,14 @@
 # Emergency Contact List
 
+### Deployment
+---
+This app is deployed on heroku at:
+https://emergency-contact-list.herokuapp.com/
 ### Architecture
 ---
 emergency-contact-list is a simple app built using node.js and angular.js with a postgresql database. The architecture is as follows:
 
 ![Architecture](images/architecture.png)
-
-### Deployment
----
-This app is deployed on heroku at:
-https://emergency-contact-list.herokuapp.com/
 ### Setup
 ---
 You must have the following installed:
