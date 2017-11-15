@@ -1,5 +1,5 @@
 {
-  "name": "uvic-reg",
+  "name": "contacts",
   "main": "server.js",
   "engines": {
     "node": "5.8.0"
